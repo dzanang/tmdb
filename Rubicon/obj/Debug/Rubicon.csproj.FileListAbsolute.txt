@@ -31,3 +31,36 @@ C:\Users\Dzanan\Documents\Visual Studio 2015\Projects\Rubicon\Rubicon\bin\Micros
 C:\Users\Dzanan\Documents\Visual Studio 2015\Projects\Rubicon\Rubicon\obj\Debug\Rubicon.csprojResolveAssemblyReference.cache
 C:\Users\Dzanan\Documents\Visual Studio 2015\Projects\Rubicon\Rubicon\obj\Debug\Rubicon.dll
 C:\Users\Dzanan\Documents\Visual Studio 2015\Projects\Rubicon\Rubicon\obj\Debug\Rubicon.pdb
+D:\Projects\TMDB\Rubicon\bin\ApplicationInsights.config
+D:\Projects\TMDB\Rubicon\bin\roslyn\csc.exe
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\TMDB\Rubicon\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\TMDB\Rubicon\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\TMDB\Rubicon\bin\roslyn\vbc.exe
+D:\Projects\TMDB\Rubicon\bin\roslyn\VBCSCompiler.exe
+D:\Projects\TMDB\Rubicon\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\TMDB\Rubicon\bin\Rubicon.dll.config
+D:\Projects\TMDB\Rubicon\bin\Rubicon.dll
+D:\Projects\TMDB\Rubicon\bin\Rubicon.pdb
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.Web.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.Web.xml
+D:\Projects\TMDB\Rubicon\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\TMDB\Rubicon\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\TMDB\Rubicon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\TMDB\Rubicon\obj\Debug\Rubicon.csprojResolveAssemblyReference.cache
+D:\Projects\TMDB\Rubicon\obj\Debug\Rubicon.dll
+D:\Projects\TMDB\Rubicon\obj\Debug\Rubicon.pdb

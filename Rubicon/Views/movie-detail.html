@@ -9,16 +9,16 @@
         <div class="col-md-offset-2">
             <div class="col-md-5">
                 <div class="image">
-                    <img ng-src="{{poster}}" style="border-radius: 10px; max-height:650px; width:100%; box-shadow: 0px 3px 7px 3px #333;" />
+                    <img class="poster" ng-src="{{poster}}" />
                 </div>
             </div>
             <div class="col-md-5">
-                <h1 style="font-size: 1.5vmax; font-family: 'Roboto Condensed', sans-serif; font-weight:bold; color:#3b3a36;">{{title}}</h1>
+                <h1 class="details" style="font-size: 1.5vmax; font-weight:bold;">{{title}}</h1>
                 <br />
-                <p style="font-size:1vmax; font-family: 'Roboto Condensed', sans-serif; text-align:justify">{{overview}}</p>
-                <h1 style="font-size:1.5vmax; font-family: 'Roboto Condensed', sans-serif;"><b>Rating:  </b>{{rating}}</h1>
-                <p style="font-size:1vmax; font-family: 'Roboto Condensed', sans-serif;"><b>Release Date:  </b>{{release}}</p>
-                <p style="font-size:1vmax; font-family: 'Roboto Condensed', sans-serif;"><b>Genres:  </b>{{genre}}</p>
+                <p class="details">{{overview}}</p>
+                <h1 class="details"><b>Rating:  </b>{{rating}}</h1>
+                <p class="details"><b>Release Date:  </b>{{release}}</p>
+                <p class="details"><b>Genres:  </b>{{genre}}</p>
                
             </div>
         </div>

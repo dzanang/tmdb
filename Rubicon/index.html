@@ -13,14 +13,18 @@
     <link href="fonts/OstrichSans-Black.otf" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid jumbotron">       
-        <div class="row col-md-offset-3">
-            <p ui-sref="movies" class="col-md-1" style="color: #e9ece5; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; cursor:pointer; margin-right:10px;">Movies</p>
-            <p ui-sref="tvshows" class="col-md-2" style="color: #e9ece5; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; cursor:pointer">TV Shows</p>
+    <div class="container-fluid jumbotron">
+        <div class="col-md-offset-3">
+            <div class="row">
+                    <p ui-sref="movies" class="col-md-1 col-sm-2 col-xs-2" style="color: #e9ece5; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; cursor:pointer; margin-right:10px;">Movies</p>
+                    <p ui-sref="tvshows" class="col-md-2 col-sm-5 col-xs-4" style="color: #e9ece5; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; cursor:pointer">TV Shows</p>
+            </div>
         </div>
     </div>
-    
-    <div ui-view></div>
 
+    <div ui-view></div>
+    <footer class="jumb-bot">
+    </footer>
 </body>
+
 </html>

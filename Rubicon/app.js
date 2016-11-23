@@ -19,7 +19,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
   })
 
         .state('detail', {
-            url: '/detail/:id',
+            url: '/movies/:id',
             templateUrl: 'views/movie-detail.html',
             controller: 'MovDetController',
             resolve: {
@@ -32,7 +32,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
 
           .state('tvdetail', {
-              url: '/tvdetail/:id',
+              url: '/tvshows/:id',
               templateUrl: 'views/tvshow-detail.html',
               controller: 'TvDetController',
               resolve: {
