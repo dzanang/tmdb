@@ -1,0 +1,28 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2">
+            <div ui-sref="tvshows" class="col-md-2" style="color: #3b3a36; font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase; cursor:pointer;"><p><span class="glyphicon glyphicon-menu-left"> </span>Back</p></div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-offset-2">
+            <div class="col-md-5">
+                    <div class="image">
+                        <img ng-src="{{tvposter}}" style="border-radius: 10px; max-height:650px; width:100%; box-shadow: 0px 3px 7px 3px #333;" />
+                    </div>                
+            </div>
+            <div class="col-md-5">
+                <h1 style="font-size: 1.5vmax; font-family: 'Roboto Condensed', sans-serif; font-weight:bold; color:#3b3a36;">{{tvtitle}}</h1>
+                <br />
+                <p class="details">{{overview | limitTo: 500}}<span ng-if="overview.length > 500">...</span></p>
+                <h1 class="details"><b>Rating:  </b>{{rating}}</h1>
+                <p class="details"><b>Release Date:  </b>{{release}}</p>
+                <p class="details"><b>Genres:  </b>{{genre}}</p>
+                <p class="details"><b>Number of Seasons:  </b>{{seasons}}</p>
+                <p class="details"><b>Status:  </b><span ng-style="myStyle">{{status}}</span></p>
+
+            </div>
+        </div>
+    </div>
+</div>
