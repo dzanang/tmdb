@@ -40,6 +40,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                       var url = 'https://api.themoviedb.org/3/tv/' + $stateParams.id + '?api_key=5a06c55fb8ca078014f8be4126cb9a73&language=en-US';
                       return $http.get(url)
                           .then(function (res) { return res.data; });
+                  },
+                  tvcast: function ($http, $stateParams) {
+                      var url = 'https://api.themoviedb.org/3/tv/' + $stateParams.id + '/credits?api_key=5a06c55fb8ca078014f8be4126cb9a73&language=en-US';
+                      return $http.get(url)
+                      .then(function (res) { return res.data; });
                   }
               }
           })
@@ -152,7 +157,7 @@ app.controller('MovDetController', ['$scope', 'details', function ($scope, detai
 }]);
 
 
-app.controller('TvDetController', ['$scope', 'tvdetails', function ($scope, tvdetails) {
+app.controller('TvDetController', ['$scope', 'tvdetails', 'tvcast', function ($scope, tvdetails, tvcast) {
 
     $scope.tvtitle = tvdetails.name;
     $scope.overview = tvdetails.overview;
@@ -176,5 +181,8 @@ app.controller('TvDetController', ['$scope', 'tvdetails', function ($scope, tvde
             "font-weight": "bold"
         }
     }
+
+    $scope.actors = tvcast.cast;
+    console.log($scope.actors);
 
 }]);
