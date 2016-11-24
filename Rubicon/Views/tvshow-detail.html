@@ -8,32 +8,34 @@
     <div class="row">
         <div class="col-md-offset-2">
             <div class="col-md-5">
-                    <div class="image">
-                        <img class="poster" ng-src="{{tvposter}}"/>
-                    </div>                
+                <div class="image">
+                    <img class="poster" ng-src="{{tvposter}}" />
+                </div>
             </div>
             <div class="col-md-7">
                 <h1 class="details" style="font-size: 1.5vmax; font-weight:bold;">{{tvtitle}}</h1>
                 <br />
                 <p class="details">{{overview | limitTo: 500}}<span ng-if="overview.length > 500">...</span></p>
                 <div class="col-md-5">
-                   
+
                     <h1 class="details"><b>Rating:  </b>{{rating}}</h1>
                     <p class="details"><b>Release Date:  </b>{{release}}</p>
                     <p class="details"><b>Genres:  </b>{{genre}}</p>
                     <p class="details"><b>Number of Seasons:  </b>{{seasons}}</p>
-                    <p class="details"><b>Status:  </b><span ng-style="myStyle">{{status}}</span></p>
+                    <p class="details"><b>Status:  </b><span ng-style="tvStyle">{{status}}</span></p>
                 </div>
                 <div class="col-md-7">
                     <p class="details"><b>Cast:</b></p>
-                    <div ng-repeat="actor in actors">
+                    <div ng-repeat="actor in actors | limitTo : 15">
                         <div class="imagemin">
-                            <a href="https://www.themoviedb.org/person/{{actor.id}}" target="_blank"><img class="img-circle col-md-3 col-sm-1 col-xs-3" width="50" height="50" style="margin-bottom:10px;" src="http://image.tmdb.org/t/p/w370/{{actor.profile_path}}" /></a>
-                        </div>                         
+                            <a href="https://www.themoviedb.org/person/{{actor.id}}" target="_blank">
+                            <img class="img-circle col-md-4 col-sm-2 col-xs-2" width="60" height="60" style="margin-bottom:15px;" src="http://image.tmdb.org/t/p/w370{{actor.profile_path}}" 
+                                 onerror="src = '../imgs/empty_profile.png'"/></a>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
+
+            </div>
         </div>
     </div>
 </div>

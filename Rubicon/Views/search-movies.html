@@ -4,7 +4,7 @@
 
 <div ng-repeat="movie in movies | limitTo: 10">
     <div ui-sref="detail({id: movie.id})" class="col-md-4" style="cursor:pointer; margin-bottom: 15px; margin-right: 5px; max-height: 711px; min-height:711px;">
-            <img class="poster" ng-src="http://image.tmdb.org/t/p/w370/{{movie.poster_path}}" />
+            <img class="poster" ng-src="http://image.tmdb.org/t/p/w370{{movie.poster_path}}" />
         <h1 class="details" style="font-size: 1.5vmax; font-weight:bold;">{{movie.title}}</h1>
         <p class="details">{{movie.overview | limitTo : 120}}<span ng-if="movie.overview.length > 120">...</span></p>
     </div>

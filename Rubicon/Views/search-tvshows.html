@@ -4,7 +4,7 @@
 
 <div ng-repeat="tv in tvshows | limitTo: 10">
     <div ui-sref="tvdetail({id: tv.id})" class="col-md-4" style="cursor:pointer; margin-bottom: 15px; margin-right: 5px; max-height: 711px; min-height:711px">
-        <img class="poster" ng-src="http://image.tmdb.org/t/p/w370/{{tv.poster_path}}" />
+        <img class="poster" ng-src="http://image.tmdb.org/t/p/w370{{tv.poster_path}}" />
         <h1 class="details" style="font-size: 1.5vmax; font-weight:bold;">{{tv.name}}</h1>
         <p class="details">{{tv.overview | limitTo : 100}}<span ng-if="tv.overview.length > 100">...</span></p>
         <br />
