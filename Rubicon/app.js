@@ -55,19 +55,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
               }
           })
 
-        .state('searchMov', {
-            url: '/movie/:query',
-            templateUrl: 'views/search-movies.html',
-            controller: 'MoviesController',
-            resolve: {
-                details: function ($http, $stateParams) {
-                    var url = 'https://api.themoviedb.org/3/search/movie?api_key=5a06c55fb8ca078014f8be4126cb9a73&language=en-US&query=' + $stateParams.query;
-                    return $http.get(url)
-                        .then(function (res) { return res.data; });
-                }
-            }
-        })
-
      .state('tvshows', {
          url: '/tvshows',
          views: {
@@ -98,6 +85,7 @@ app.controller("MoviesController", function ($scope, $http, $rootScope, dataServ
     $scope.movies = [];
     $rootScope.loaded = false;
 
+    //SEARCH IMPLEMENTATION NEED SOME REFACTORING IN ORDER TO WORK WITH THE BACK BUTTON
     $scope.$watch('search', function () {
         loadData();
     });
@@ -124,6 +112,7 @@ app.controller("TvshowsController", function ($scope, $http, $rootScope, dataSer
     $scope.tvshows = [];
     $rootScope.loaded = false;
 
+    //SEARCH IMPLEMENTATION NEED SOME REFACTORING IN ORDER TO WORK WITH THE BACK BUTTON
     $scope.$watch('search', function () {
         loadData();
     });
@@ -156,6 +145,8 @@ app.controller('MovDetController', ['$scope', 'details', 'movcast', function ($s
     $scope.genres = details.genres;
     $scope.genre = $scope.genres.map(function (obj) { return obj.name; }).join(', ');
     $scope.status = details.status;
+
+    //PROVIDES DETAILS ON MOVIE'S AVAILABILITY
     if ($scope.status == "In Production") {
         $scope.movStyle = {
             "color": "blue",
@@ -198,6 +189,8 @@ app.controller('TvDetController', ['$scope', 'tvdetails', 'tvcast', function ($s
     $scope.genre = $scope.genres.map(function (obj) { return obj.name; }).join(', ');
     $scope.seasons = tvdetails.number_of_seasons;
     $scope.status = tvdetails.status;
+
+    //MAKES IT EASIER TO SEE IF THE TVSHOW IS STILL ONGOING OR NOT
     if ($scope.status == "Ended") {
         $scope.tvStyle = {
             "color": "red",

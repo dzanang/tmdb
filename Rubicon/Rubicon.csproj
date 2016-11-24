@@ -95,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="imgs\empty_profile.png" />
-    <Content Include="imgs\popcorn-1433327.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
